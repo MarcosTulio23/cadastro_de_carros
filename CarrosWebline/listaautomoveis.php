@@ -12,7 +12,7 @@ $sql = "SELECT c.nome, c.placa, c.chassi, m.nome AS montadora
         LEFT JOIN montadoras m ON c.montadora = m.codigo
         WHERE c.nome LIKE '%$busca%'";
 
-$resultado = $conn->query($sql);
+$resultado = $conect->query($sql);
 ?>
 
 <!DOCTYPE html>
@@ -62,6 +62,7 @@ $resultado = $conn->query($sql);
 
 </body>
 </html>
+
 
 
 
