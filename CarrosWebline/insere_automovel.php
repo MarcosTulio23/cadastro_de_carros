@@ -21,7 +21,7 @@ $situacao = $conect->query($sql);
 <body class="container mt-5">
 
 <?php if ($situacao) { ?>
-    <div class="alert alert-success">Cadastrado concluído!</div>
+    <div class="alert alert-success">Cadastro concluído!</div>
 <?php } else { ?>
     <div class="alert alert-danger">Erro ao cadastrar!</div>
 <?php } ?>
@@ -31,3 +31,4 @@ $situacao = $conect->query($sql);
 
 </body>
 </html>
+
