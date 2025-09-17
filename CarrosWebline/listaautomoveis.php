@@ -1,5 +1,5 @@
 <?php
-$conn = new mysqli("localhost", "root", "2305", "webline");
+$conect = new mysqli("localhost", "root", "2305", "webline");
 $conect->set_charset("utf8mb4");
 
 $busca = "";
@@ -62,4 +62,5 @@ $resultado = $conn->query($sql);
 
 </body>
 </html>
+
 
