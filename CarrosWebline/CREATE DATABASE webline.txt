@@ -1,0 +1,26 @@
+CREATE DATABASE webline;
+
+USE webline;
+
+CREATE TABLE montadoras (
+    codigo INT AUTO_INCREMENT PRIMARY KEY,
+    nome VARCHAR(100) NOT NULL
+);
+
+CREATE TABLE carros (
+    codigoc INT AUTO_INCREMENT PRIMARY KEY,
+    nome VARCHAR(100) NOT NULL,
+    placa VARCHAR(7) NOT NULL,
+    chassi VARCHAR(17),
+    montadora INT,
+    FORING KEY (montadora) REFERENCES montadoras(codigo)
+);
+
+INSERT INTO montadoras (nome) VALUES
+('Volkswagen'),
+('Ford'),
+('Fiat'),
+('Chevrolet');
+
+ALTER TABLE carros AUTO_INCREMENT = 1;   (opcional)
+    
