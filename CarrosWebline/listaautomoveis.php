@@ -58,9 +58,10 @@ $resultado = $conn->query($sql);
         </tbody>
     </table>
 
-    <a href="index.php" class="btn btn-primary">Cadastrar Novo</a>
+    <a href="index.php" class="btn btn-primary">Novo Cadastro</a>
 
 </body>
 </html>
+
 
 
