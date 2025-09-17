@@ -1,10 +1,10 @@
 <?php
 $conn = new mysqli("localhost", "root", "2305", "webline");
-$conn->set_charset("utf8mb4");
+$conect->set_charset("utf8mb4");
 
 $busca = "";
 if (isset($_GET['busca'])) {
-    $busca = $conn->real_escape_string($_GET['busca']);
+    $busca = $conect->real_escape_string($_GET['busca']);
 }
 
 $sql = "SELECT c.nome, c.placa, c.chassi, m.nome AS montadora
@@ -62,3 +62,4 @@ $resultado = $conn->query($sql);
 
 </body>
 </html>
+
