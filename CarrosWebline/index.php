@@ -17,7 +17,7 @@ $montadoras = $conect->query("SELECT * FROM montadoras");
 
     <form method="post" action="insere_automovel.php" class="mt-4">
 
-        <label>Nome:</label>
+        <label>Nome do veículo:</label>
         <input type="text" name="nome" class="form-control" required>
 
         <label class="mt-3">Placa:</label>
@@ -39,3 +39,4 @@ $montadoras = $conect->query("SELECT * FROM montadoras");
     </form>
 </body>
 </html>
+
